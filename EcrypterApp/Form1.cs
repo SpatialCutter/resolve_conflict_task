@@ -19,6 +19,7 @@ namespace EcrypterApp
             InitializeComponent();
             //Заполнение массива шифров
             cyphers = new Dictionary<string, IEncryptable> {
+                { "Транспонирование", new TransposeCypher() },
                 { "Слово Цезаря", new CesaroWordCypher() },
                 { "Цезарь", new CesaroCypher() }
             };
