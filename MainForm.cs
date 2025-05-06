@@ -111,5 +111,35 @@ namespace BookShopAnalitics
             //table
             distribchart.Visibility = Visibility.Collapsed;
         }
+
+        private void DeactiveTab(Button btn)
+        {
+            btn.Background = Brushes.LightGray;
+            btn.Foreground = Brushes.Gray;
+            btn.BorderBrush = Brushes.Gray;
+        }
+
+        private void ActiveTab(Button btn)
+        {
+            btn.Background = Brushes.White;
+            btn.Foreground = SystemParameters.WindowGlassBrush;
+            btn.BorderBrush = SystemParameters.WindowGlassBrush;
+        }
+
+        private void tabStat_Click(object sender, RoutedEventArgs e)
+        {
+            if (showstat)
+            {
+                DeactiveTab(tabStat);
+                statwidth = (int)colStat.ActualWidth;
+                colStat.Width = new GridLength(0);
+            }
+            else
+            {
+                ActiveTab(tabStat);
+                colStat.Width = new GridLength(statwidth);
+            }
+            showstat = !showstat;
+        }
     }
 }
