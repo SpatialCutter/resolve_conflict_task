@@ -19,6 +19,7 @@ namespace EcrypterApp
             InitializeComponent();
             //Заполнение массива шифров
             cyphers = new Dictionary<string, IEncryptable> {
+                { "Цезарь", new CesaroCypher() }
             };
             //Заполнение выпадающего списка
             cbFunction.DataSource = cyphers.Keys.ToList();
