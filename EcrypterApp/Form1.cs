@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -19,6 +19,7 @@ namespace EcrypterApp
             InitializeComponent();
             //Заполнение массива шифров
             cyphers = new Dictionary<string, IEncryptable> {
+                { "Слово Цезаря", new CesaroWordCypher() },
                 { "Цезарь", new CesaroCypher() }
             };
             //Заполнение выпадающего списка
