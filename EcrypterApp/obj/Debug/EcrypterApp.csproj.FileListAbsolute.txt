@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\bin\Debug\EcrypterApp.exe.config
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\bin\Debug\EcrypterApp.exe
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\bin\Debug\EcrypterApp.pdb
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.Form1.resources
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.Properties.Resources.resources
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.csproj.GenerateResource.cache
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.exe
+D:\Visual Studio Projects\EcrypterApp\EcrypterApp\obj\Debug\EcrypterApp.pdb
