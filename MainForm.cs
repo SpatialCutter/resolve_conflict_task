@@ -104,7 +104,6 @@ namespace BookShopAnalitics
             DeactiveTab(tabTable);
             chart.Visibility = Visibility.Collapsed;
             scrollchart.Visibility = Visibility.Collapsed;
-            //table
             distribchart.Visibility = Visibility.Collapsed;
         }
 
@@ -122,20 +121,6 @@ namespace BookShopAnalitics
             btn.BorderBrush = SystemParameters.WindowGlassBrush;
         }
 
-        private void tabStat_Click(object sender, RoutedEventArgs e)
-        {
-            if (showstat)
-            {
-                DeactiveTab(tabStat);
-                statwidth = (int)colStat.ActualWidth;
-                colStat.Width = new GridLength(0);
-            }
-            else
-            {
-                ActiveTab(tabStat);
-                colStat.Width = new GridLength(statwidth);
-            }
-            showstat = !showstat;
-        }
+        private void tabStat_Click(object sender, RoutedEventArgs e) { }
     }
 }
