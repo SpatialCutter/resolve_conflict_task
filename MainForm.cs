@@ -56,19 +56,15 @@ namespace BookShopAnalitics
                 li.line.Refresh();
                 li.analysis = new Analysis(line);
                 li.analysis.Refresh();
-                //if (editline.slSmooth.Value > 0) li.line.Smooth((int)(editline.slSmooth.Value));
-                //if (editline.slPredict.Value > 0) li.line.AddPrediction((int)(editline.slPredict.Value), 0.25, 0.25, 0.25, 0.25, 5);
                 lines.Insert(sender+1, li);
 
                 graph.Draw(li.analysis, sender+1);
                 LineNumsRefresh(sender + 1, true);
                 lbLegendAdd.Visibility = Visibility.Hidden;
-                //lGStat.Content = line.GetStatistic();
                 lTrends.Content = li.analysis.GetTendency(); 
                 lTrends.Content += li.analysis.GetTrends();
                 lSeason.Content = li.analysis.GetSeason();
                 lAnomaly.Content = li.analysis.GetAnomaly();
-                //line.Smooth(5);
             }            
         }
 
